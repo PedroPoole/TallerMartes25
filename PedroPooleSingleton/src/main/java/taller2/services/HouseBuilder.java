@@ -54,8 +54,17 @@ public class HouseBuilder implements HouseBuilderI {
 	
 	@Override
 	public House build(){
-		return this.house;
+		House current=this.house;
+		this.reset();
+		return current;
 	}
+
+	private void reset() {
+		this.house=new House();
+		
+	}
+
+
 	
 	
 	
