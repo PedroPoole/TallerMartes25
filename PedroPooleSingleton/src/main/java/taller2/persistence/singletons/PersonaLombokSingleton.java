@@ -20,5 +20,5 @@ public class PersonaLombokSingleton{
 	private Persona persona;
 	
 	@Getter(lazy = true)
-	private static final PersonaLombokSingleton instance = new PersonaLombokSingleton(); 
+	private static final Persona instance = new Persona(); 
 }

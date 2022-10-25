@@ -3,27 +3,21 @@ package taller2.persistence.singletons;
 import taller2.persistence.Persona;
 
 public class PersonaSingleton {
-	private static PersonaSingleton	INSTANCE;
+	private static Persona	INSTANCE;
 	private Persona					persona;
 
 	private PersonaSingleton() {
 	}
 
-	public static PersonaSingleton getInstance() {
+	public static Persona getInstance() {
 		if (INSTANCE == null) {
-			INSTANCE = new PersonaSingleton();
+			INSTANCE = new Persona();
 		}
 
 		return INSTANCE;
 	}
 
-	public Persona getPersona() {
-		return persona;
-	}
-
-	public void setPersona(Persona persona) {
-		this.persona = persona;
-	}
+	
 
 	
 
