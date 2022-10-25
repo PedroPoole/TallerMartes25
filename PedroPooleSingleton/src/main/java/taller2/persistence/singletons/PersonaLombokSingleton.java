@@ -9,6 +9,10 @@ import lombok.Setter;
 import lombok.ToString;
 import taller2.persistence.Persona;
 
+/**
+ * @author Pedro Poole
+ *
+ */
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class PersonaLombokSingleton{
 	@Getter
