@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import taller2.persistence.House;
 import taller2.persistence.Persona;
 import taller2.services.HouseBuilder;
+import taller2.services.HouseBuilderI;
 
 @SpringBootApplication
 public class PedroPooleSingletonApplication implements ApplicationRunner {
@@ -19,7 +20,7 @@ public class PedroPooleSingletonApplication implements ApplicationRunner {
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
 		
-		HouseBuilder houseBuilder=new HouseBuilder();
+		HouseBuilderI houseBuilder=new HouseBuilder();
 		
 		House casa1=houseBuilder
 				.addWalls(9, "blue")
